@@ -1,10 +1,11 @@
 # A class project to demonstrate data warehousing interfaced with REST API calls
 The target audience for the site would be a researcher who'd like to find out more information about target genes for small non-coding RNAs (ncRNA, miRNA, siRNA).
--Experimentally supported miRNA target data from TarBase was obtained via their REST interface
--Data about predicted targets was downloaded from miRDB and subsequently loaded into SQLite DB
--Further information about target genes is looked up from the Ensembl API service, NCBI, and Uniprot, if available
--HUGO (Human Genome Organisation) was used to get gene ontology and nomenclature
--OMIM (Online Mendelian Inheritance in Man) was used to get information about the gene and its phenotypes
+
+- Experimentally supported miRNA target data from TarBase was obtained via their REST interface
+- Data about predicted targets was downloaded from miRDB and subsequently loaded into SQLite DB
+- Further information about target genes is looked up from the Ensembl API service, NCBI, and Uniprot, if available
+- HUGO (Human Genome Organisation) was used to get gene ontology and nomenclature
+- OMIM (Online Mendelian Inheritance in Man) was used to get information about the gene and its phenotypes
 
 - Some basic validation is done on the input form before submission
 - If a term has already been looked up, the program will retrieve from the database instead of making additional API calls.
