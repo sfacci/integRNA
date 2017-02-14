@@ -1,0 +1,30 @@
+body{
+	font-family: Helvetica, Arial;
+	background-image: url("Pre-mRNA.png");
+	margin: 25px;
+	width: 600px;
+	
+}
+h1, h2{
+	line-height: 14px;
+}
+
+a:link {
+    color: #008F00; /*medium green*/
+}
+a:visited {
+    color: #00551D; /*darker green*/
+}
+a:hover {
+    color: #33CC33; /*brighter green*/
+}
+a:active {
+    color: #33CC33; /*brighter green*/
+}
+
+.intro, form {
+	background-color: #fefefe;
+	width: 700px;
+	border: 1px solid black;
+	padding: 10px;
+}

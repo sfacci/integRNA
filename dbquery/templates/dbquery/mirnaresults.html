@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head><h1>Here are your results</h1>
+<h2> for {{search_id}}</h2>
+</head>
+<body>
+<link href="{{ STATIC_URL }}mirnaresults.css" rel="stylesheet" type="text/css" />
+{% load django_tables2 %} 
+
+<h2>Experimentally Verified Targets</h2>
+<p>Verified targets are from DIANA lab's <a href="http://diana.imis.athena-innovation.gr/DianaTools/index.php?r=tarbase/index">TarBase 7.0</a>. Click on the Ensembl gene identification numbers to get more information about the gene targets. Other accession numbers and ID formats are not currently supported. Data source codes reflect the DIANA database the data originated from.</p>
+{% render_table table1 %}
+
+<h2>Predicted Targets</h2>
+<p>Predicted target data is from <a href="http://mirdb.org/miRDB/faq.html">miRDB.org version 5.0.</a> All scores are between 50 and 100. Scores above 80 are most likely to be real targets. Click on the NCBI Gene ID number to get more information about the mRNA target and associated gene.</p>
+{% render_table table2 %}
+
+</body

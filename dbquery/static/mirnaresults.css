@@ -1,0 +1,38 @@
+body{
+	font-family: Helvetica, Arial;
+	background-image: url("gradientgreen.jpg");
+}
+a:link {
+    color: #008F00; /*medium green*/
+}
+a:visited {
+    color: #00551D; /*darker green*/
+}
+a:hover {
+    color: #33CC33; /*brighter green*/
+}
+a:active {
+    color: #33CC33; /*brighter green*/
+}
+
+table, td, th{
+	border: 1px solid green;
+	border-collapse: collapse;
+	padding: 10px;
+	color: black;
+}
+th{
+	background-color: #DBDBDB; /*medium grey*/
+	text-align: left;
+}
+
+tr:nth-child(even){
+	background-color: #DBDBDB;
+}
+tr:nth-child(odd){
+	background-color: #EBEBEB; /*light grey*/
+}
+h1, h2{
+	line-height: 14px;
+}
+

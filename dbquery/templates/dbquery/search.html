@@ -1,0 +1,14 @@
+<html>
+<link href="{{ STATIC_URL }}search.css" rel="stylesheet" type="text/css" />
+<head><h1>Enter an miRNA Accession Number</h1>
+</head>
+<body>
+<p class="intro"> An example format is given. If this is the first time your accession number has been queried, this might take a few minutes. If available, results will be shown for experimentally verified targets from TarBase and predicted targets from miRDB, with additional gene target information from NCBI, Ensembl, and more.</p>
+<!--form action specifies the next page to load-->
+<form action="" method="post">
+{% csrf_token %}
+{{ form.as_p }}
+<input type="submit" value="Search" />
+</form>
+
+</body>

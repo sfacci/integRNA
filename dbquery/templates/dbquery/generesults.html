@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+<head><h1>Here are your results</h1>
+<h2> for {{search_id}}</h2>
+</head>
+<body>
+<link href="{{ STATIC_URL }}generesults.css" rel="stylesheet" type="text/css" />
+{% load django_tables2 %} 
+{% if table %}
+	{% render_table table %}
+{% endif %}
+{{message}}
+</body
